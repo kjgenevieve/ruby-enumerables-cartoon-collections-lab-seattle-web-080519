@@ -26,6 +26,8 @@ def find_the_cheese(maybe_cheese_ary)
   maybe_cheese_ary.each do |item|
     if cheeses.include?(item)
       return item
+    else
+      return nil
     end
   end
 end
