@@ -18,8 +18,15 @@ end
 
 
 
-def find_the_cheese
+def find_the_cheese(maybe_cheese_ary)
+  cheeses = w%[cheddar gouda camembert]
   
+  #for each item in the maybe_cheese_ary, see if it is present in the cheeses ary
+  
+  maybe_cheese_ary.each do |item|
+    cheeses.include?(item)
+  end
+  return item
 end
 
 
