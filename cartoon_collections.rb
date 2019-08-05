@@ -23,7 +23,7 @@ def find_the_cheese(maybe_cheese_ary)
   
   #for each item in the maybe_cheese_ary, see if it is present in the cheeses ary
   
-  maybe_cheese_ary.each do |item|
+  maybe_cheese_ary.find do |item|
     if cheeses.include?(item)
       return item
     else
@@ -31,11 +31,6 @@ def find_the_cheese(maybe_cheese_ary)
     end
   end
 end
-
-
-
-
-
 
 
 
